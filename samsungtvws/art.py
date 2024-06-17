@@ -499,7 +499,7 @@ class SamsungTVArt(SamsungTVWSConnection):
 
         return (json.loads(data["matte_type_list"]), json.loads(data.get("matte_color_list"))) if include_colour else json.loads(data["matte_type_list"])
 
-    def change_matte(self, content_id, matte_id, portrait_matte, device_name):
+    def change_matte(self, content_id, matte_id, portrait_matte, devicename):
         '''
         matte is name_color eg flexible_polar or none
         NOTE: Not all mattes can be set for all image sizes!
@@ -509,7 +509,7 @@ class SamsungTVArt(SamsungTVWSConnection):
                         "content_id": content_id,
                         "matte_id": matte_id,
                         "portrait_matte_id": portrait_matte,
-                        "device_name": device_name,
+                        "devicename": device_name,
                       }
         if portrait_matte:
             art_request["portrait_matte_id"] = portrait_matte
