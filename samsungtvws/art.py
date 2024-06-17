@@ -505,7 +505,7 @@ class SamsungTVArt(SamsungTVWSConnection):
         NOTE: Not all mattes can be set for all image sizes!
         '''
         art_request = {
-                        "request": "change_matte",
+                        "request": "change_matteee",
                         "content_id": content_id,
                         "matte_id": matte_id,
                         "portrait_matte_id": portrait_matte,
